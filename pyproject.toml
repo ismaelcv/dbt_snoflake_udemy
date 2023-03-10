@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "DBT_udemy_training"
+version = "0.0.0"
+description = ""
+authors = ["Ismael Cabral <ismael.cabral@xebia.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10,<3.12"
+snowflake-connector-python = { version = "^2.6.3", extras = ["pandas"] }
+dbt-snowflake = "^1.4.1"
+
+
+[tool.poetry.group.dev.dependencies]
+
+
+[tool.black]
+line-length = 120
+preview = true
+
+[tool.isort]
+profile = "black"
+line_length = 120
+known_first_party = "app"
